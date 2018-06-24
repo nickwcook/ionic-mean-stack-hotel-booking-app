@@ -4,54 +4,6 @@ webpackJsonp([3],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailableRoomsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(124);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var AvailableRoomsPage = /** @class */ (function () {
-    function AvailableRoomsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.rooms = this.navParams.get('rooms');
-    }
-    AvailableRoomsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AvailableRoomsPage');
-    };
-    AvailableRoomsPage.prototype.bookRoom = function (room) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__booking_booking__["a" /* BookingPage */], {
-            room: room,
-            details: this.navParams.get('details')
-        });
-    };
-    AvailableRoomsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-available-rooms',template:/*ion-inline-start:"C:\Users\Nick\Desktop\hotel-booking-mean-app\src\pages\available-rooms\available-rooms.html"*/'<ion-header>\n \n      <ion-navbar color="dark">\n\n            <ion-title>Available Rooms</ion-title>\n\n      </ion-navbar>\n      \n</ion-header>\n           \n<ion-content>\n\n      <ion-card tappable *ngFor="let room of rooms" (click)="bookRoom(room)">\n\n            <img src="http://placehold.it/500x500" alt="Room placeholder image" class="header">\n\n            <div class="card-title-container">\n\n                  <p class="card-title">{{room.type}}</p>\n\n                  <p class="room-description">\n                        \n                        <ion-icon name="cloud"></ion-icon>{{room.beds}}\n\n                        <ion-icon name="cash"></ion-icon>{{room.cost_per_night | currency: \'GBP\'}}\n\n                        <ion-icon name="people"></ion-icon>{{room.max_occupancy}}\n                  \n                  </p>\n\n            </div>\n\n      </ion-card>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Nick\Desktop\hotel-booking-mean-app\src\pages\available-rooms\available-rooms.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], AvailableRoomsPage);
-    return AvailableRoomsPage;
-}());
-
-//# sourceMappingURL=available-rooms.js.map
-
-/***/ }),
-
-/***/ 124:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
@@ -123,7 +75,7 @@ var BookingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +83,7 @@ var BookingPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rooms_rooms__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__available_rooms_available_rooms__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__available_rooms_available_rooms__ = __webpack_require__(125);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -217,6 +169,54 @@ var SearchPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 125:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailableRoomsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(123);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AvailableRoomsPage = /** @class */ (function () {
+    function AvailableRoomsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.rooms = this.navParams.get('rooms');
+    }
+    AvailableRoomsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AvailableRoomsPage');
+    };
+    AvailableRoomsPage.prototype.bookRoom = function (room) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__booking_booking__["a" /* BookingPage */], {
+            room: room,
+            details: this.navParams.get('details')
+        });
+    };
+    AvailableRoomsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-available-rooms',template:/*ion-inline-start:"C:\Users\Nick\Desktop\hotel-booking-mean-app\src\pages\available-rooms\available-rooms.html"*/'<ion-header>\n \n      <ion-navbar color="dark">\n\n            <ion-title>Available Rooms</ion-title>\n\n      </ion-navbar>\n      \n</ion-header>\n           \n<ion-content>\n\n      <ion-card tappable *ngFor="let room of rooms" (click)="bookRoom(room)">\n\n            <img src="http://placehold.it/500x500" alt="Room placeholder image" class="header">\n\n            <div class="card-title-container">\n\n                  <p class="card-title">{{room.type}}</p>\n\n                  <p class="room-description">\n                        \n                        <ion-icon name="cloud"></ion-icon>{{room.beds}}\n\n                        <ion-icon name="cash"></ion-icon>{{room.cost_per_night | currency: \'GBP\'}}\n\n                        <ion-icon name="people"></ion-icon>{{room.max_occupancy}}\n                  \n                  </p>\n\n            </div>\n\n      </ion-card>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Nick\Desktop\hotel-booking-mean-app\src\pages\available-rooms\available-rooms.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], AvailableRoomsPage);
+    return AvailableRoomsPage;
+}());
+
+//# sourceMappingURL=available-rooms.js.map
+
+/***/ }),
+
 /***/ 136:
 /***/ (function(module, exports) {
 
@@ -239,15 +239,15 @@ webpackEmptyAsyncContext.id = 136;
 
 var map = {
 	"../pages/available-rooms/available-rooms.module": [
-		399,
+		401,
 		2
 	],
 	"../pages/booking/booking.module": [
-		400,
+		399,
 		1
 	],
 	"../pages/search/search.module": [
-		401,
+		400,
 		0
 	]
 };
@@ -274,7 +274,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_search__ = __webpack_require__(124);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -334,9 +334,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(241);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_available_rooms_available_rooms__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_booking_booking__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_search_search__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_available_rooms_available_rooms__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_booking_booking__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_search_search__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_rooms_rooms__ = __webpack_require__(96);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -377,9 +377,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* App */], {}, {
                     links: [
-                        { loadChildren: '../pages/available-rooms/available-rooms.module#AvailableRoomsPageModule', name: 'AvailableRoomsPage', segment: 'available-rooms', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/booking/booking.module#BookingPageModule', name: 'BookingPage', segment: 'booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/available-rooms/available-rooms.module#AvailableRoomsPageModule', name: 'AvailableRoomsPage', segment: 'available-rooms', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
