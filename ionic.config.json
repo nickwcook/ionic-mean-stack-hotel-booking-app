@@ -1,0 +1,8 @@
+{
+  "name": "hotel-booking-mean-app",
+  "app_id": "b0c3ef21",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
