@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 export class RoomsProvider {
 
       constructor(public http: Http) {
-            console.log('Hello RoomsProvider Provider');
+        
       }
 
       getRooms(options) {
