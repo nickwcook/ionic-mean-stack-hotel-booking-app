@@ -17,7 +17,7 @@ export class AvailableRoomsPage {
       }
       
       ionViewDidLoad() {
-            console.log('ionViewDidLoad AvailableRoomsPage');
+        
       }
 
       bookRoom(room) {
