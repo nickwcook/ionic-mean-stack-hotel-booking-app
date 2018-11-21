@@ -35,7 +35,7 @@ export class SearchPage {
       }
       
       ionViewDidLoad() {
-            console.log('ionViewDidLoad SearchPage');
+        
       }
 
       findRooms() {
@@ -77,7 +77,7 @@ export class SearchPage {
                               }
                         },
                         err => {
-                              console.log(`Error searching for rooms: ${err}`);
+                          return err;
                         }
                   )
 
