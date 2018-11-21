@@ -23,7 +23,7 @@ export class BookingPage {
       }
       
       ionViewDidLoad() {
-            console.log('ionViewDidLoad BookingPage');
+        
       }
 
       bookRoom() {
@@ -57,7 +57,7 @@ export class BookingPage {
                               this.navCtrl.popToRoot();
                         },
                         err => {
-                              console.error(`Error booking room: ${err}`);
+                          return err;
                         }
                   )
 
